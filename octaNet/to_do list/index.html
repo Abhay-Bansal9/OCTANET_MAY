@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-D0 List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont">
+        <div class="cont1">
+          <div class="content">
+            <h3>TO-DO List</h3>
+            <br />
+            <!-- <h4>You have tasks </h4> -->
+          </div>
+        </div>
+        <div class="cont2">
+          <div class="askTask">
+            <input type="text" id="todo-input" placeholder="Add new task..." />
+          </div>
+          <div class="category">
+            <div class="type">
+              <select id="types">
+                <option value="Home">Home</option>
+                <option value="Personal">Personal</option>
+                <option value="College">College</option>
+                <option value="Coding">Coding</option>
+              </select>
+            </div>
+            <div class="Date">
+              <input type="date" id="due-date" />
+            </div>
+            <button onclick="addTodo()">Add</button>
+          </div>
+          <div class="ad">
+            <ul id="todo-items"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
